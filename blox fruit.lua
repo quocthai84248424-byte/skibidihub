@@ -1,4 +1,24 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+
+-- Chỉnh sửa tên Hub và Tác giả ở đây
+local Window = OrionLib:MakeWindow({
+    Name = "Skibidi Hub | By ilovedog1901ilovecat5551", 
+    HidePremium = false, 
+    SaveConfig = true, 
+    ConfigFolder = "SkibidiConfig"
+})
+
+-- Thông báo khi vừa mở Script
+OrionLib:MakeNotification({
+    Name = "Skibidi Hub Activated",
+    Content = "Chào mừng bạn! Script đc tạo bởi ilovedog1901ilovecat5551",
+    Time = 5
+})
+
+-- Các phần Tab và Logic bên dưới giữ nguyên...
+OrionLib:Init()
+
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 local Window = OrionLib:MakeWindow({Name = "Redz Hub Clone | Blox Fruits", HidePremium = false, SaveConfig = true, ConfigFolder = "RedzConfig"})
 
 -- Biến hệ thống
@@ -99,3 +119,4 @@ ConfigTab:AddButton({
 })
 
 OrionLib:Init()
+
